@@ -20,7 +20,7 @@ function Square(){
   const [value, setValue] = useState(null);
   //define the onclick function
   function handleClick() {
-    console.log('clicked!');
+    setValue('X');;
   }
   return (
     <button 

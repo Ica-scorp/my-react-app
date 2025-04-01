@@ -33,6 +33,7 @@ function Square(){
 }
 
 function Board() {
+  const [squares, setSquares] = useState(Array(9).fill(null));//initialize the board
   return (
     <>
       <div className="board-row">

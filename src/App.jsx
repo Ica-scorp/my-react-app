@@ -29,14 +29,14 @@ function Board() {
         <Square></Square>
       </div>
       <div className="board-row">
-        <button className="square">4</button>
-        <button className="square">5</button>
-        <button className="square">6</button>
+      <Square></Square>
+        <Square></Square>
+        <Square></Square>
       </div>
       <div className="board-row">
-        <button className="square">7</button>
-        <button className="square">8</button>
-        <button className="square">9</button>
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
       </div>
     </>
   );

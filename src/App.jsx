@@ -16,17 +16,17 @@ function App() {
 
 export default App
 
-function Square({value}){
-  return <button className="square">{value}</button>;
+function Square(){
+  return <button className="square">X</button>;
 }
 
 function Board() {
   return (
     <>
       <div className="board-row">
-        <button className="square">1</button>
-        <button className="square">2</button>
-        <button className="square">3</button>
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
       </div>
       <div className="board-row">
         <button className="square">4</button>

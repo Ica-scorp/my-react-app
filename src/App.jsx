@@ -17,7 +17,18 @@ function App() {
 export default App
 
 function Square({value}){
-  return <button className="square">{value}</button>;
+  //define the onclick function
+  function handleClick() {
+    console.log('clicked!');
+  }
+  return (
+    <button 
+      onClick={handleClick}
+      className="square"
+    >
+      {value}
+    </button>
+  );
 }
 
 function Board() {

@@ -17,6 +17,7 @@ function App() {
 export default App
 
 function Square({value}){
+  const [value, setValue] = useState(null);
   //define the onclick function
   function handleClick() {
     console.log('clicked!');

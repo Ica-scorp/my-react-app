@@ -3,19 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <h1>Hi</h1>
-      <Board></Board>
-    </>
-  )
-}
-
-export default App
-
 function Square({value,onSquareClick}){
   return (
     <button 
@@ -91,4 +78,26 @@ function calculateWinner(squares) {
     }
   }
   return null;
+}
+
+
+export default function Game() {
+  const [xIsNext, setXIsNext] = useState(true);
+  const [history, setHistory] = useState([Array(9).fill(null)]);
+  const currentSquares = history[history.length - 1];
+  function handlePlay(nextSquares) {
+    // TODO
+  }
+
+  
+  return (
+    <div className="game">
+      <div className="game-board">
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+      </div>
+      <div className="game-info">
+        <ol>{/*TODO*/}</ol>
+      </div>
+    </div>
+  );
 }

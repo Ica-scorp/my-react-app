@@ -17,13 +17,8 @@ function App() {
 export default App
 
 function Square({value}){
-  //define the onclick function
-  function handleClick() {
-    setValue('X');;
-  }
   return (
     <button 
-      onClick={handleClick}
       className="square"
     >
       {value}
